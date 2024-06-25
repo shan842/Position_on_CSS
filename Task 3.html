@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for card styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+            box-sizing: border-box;
+            float: left; /* Use float property for layout */
+            width: calc(100% - 120px); /* Adjust width based on image width */
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            clear: both; /* Clear float */
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://via.placeholder.com/120" alt="Placeholder Image">
+    <div class="card-content">
+        <h3>Card Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non justo finibus, blandit odio et, lacinia nisi.</p>
+    </div>
+    <div class="card-footer">
+        <a href="#">Read More</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+The z-index CSS property sets the z-order of a positioned element and its descendants or flex and grid items. 
+Overlapping elements with a larger z-index cover those with a smaller one.
+
+Example:-
+
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
